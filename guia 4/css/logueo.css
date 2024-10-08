@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -16,29 +17,36 @@ body {
     margin: 0 auto;
     background: #1C2B4A;
     margin-top: 150px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .header {
     height: 44px;
     background: #17233B;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
 }
 
 .header h2 {
-    height: 44px;
     line-height: 44px;
     color: #fff;
     text-align: center;
 }
 
+/* Estilos del formulario de login */
 .login {
     padding: 0 20px;
 }
 
 .login span.un {
+    display: inline-block;
     width: 10%;
     text-align: center;
     color: #0C6;
-    border-radius: 3px 0 0 3px;
+    font-size: 18px;
+    vertical-align: middle;
 }
 
 .text {
@@ -49,6 +57,8 @@ body {
     outline: none;
     color: #999;
     font-family: 'Source Sans Pro', sans-serif;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
 .text .login span.un {
@@ -60,36 +70,32 @@ body {
 }
 
 .btn {
-    height: 40px;
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
     border: none;
-    background: #0C6;
+    border-radius: 5px;
     width: 100%;
-    outline: none;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    color: #eee;
-    border-bottom: solid 3px #093;
-    border-radius: 3px;
+    height: 50px;
     cursor: pointer;
+    margin-top: 20px;
 }
 
-ul li {
-    height: 40px;
-    margin: 15px 0;
-    list-style: none;
+.btn:hover {
+    background-color: #218838;
 }
-
 .span {
-    display: table;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    font-size: 14px;
+    margin-top: 10px;
 }
 
 .ch {
     display: inline-block;
-    width: 50%;
     color: #CCC;
+    font-size: 14px;
 }
 
 .ch a {
@@ -97,74 +103,70 @@ ul li {
     text-decoration: none;
 }
 
-.ch:nth-child(2) {
-    text-align: right;
+.ch a:hover {
+    text-decoration: underline;
 }
-
 .social {
     height: 30px;
     line-height: 30px;
     display: table;
     width: 100%;
+    margin: 20px 0;
 }
 
 .social div {
     display: inline-block;
-    width: 42%;
+    width: 48%;
     color: #eee;
     font-size: 12px;
     text-align: center;
-    border-radius: 3px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 2%;
 }
 
-.social div i.fa {
-    font-size: 16px;
-    line-height: 30px;
+.social div.fb {
+    background: #3B5998;
 }
 
-.fb {
-    background: #3B5A9A;
-    border-bottom: solid 3px #036;
+.social div.tw {
+    background: #1DA1F2;
 }
 
-.tw {
-    background: #2CABD2;
-    margin-left: 16%;
-    border-bottom: solid 3px #3399CC;
+.social div:hover {
+    opacity: 0.9;
 }
 
 .sign {
-    width: 90%;
-    padding: 0 5%;
-    height: 50px;
-    display: table;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
     background: #17233B;
-}
-
-.sign div {
-    display: inline-block;
-    width: 50%;
-    line-height: 50px;
     color: #CCC;
     font-size: 14px;
+    border-radius: 0 0 10px 10px;
 }
 
-.reg {
-    text-align: right;
+.cuenta {
+    margin-bottom: 10px;
 }
 
 .reg a {
     display: block;
-    background: #096;
+    background: #28a745;
     text-align: center;
     height: 35px;
     line-height: 35px;
     width: 50%;
-    font-size: 16px;
-    color: #eee;
+    margin: 0 auto;
+    color: #fff;
     text-decoration: none;
     border-bottom: solid 3px #006633;
-    border-radius: 3px;
+    border-radius: 5px;
     font-weight: bold;
-    margin-left: 50%;
+}
+
+.reg a:hover {
+    background-color: #218838;
 }
